@@ -7,7 +7,6 @@ test("Handling Checkbox in Playwright", async ({ page }) => {
     await expect(page.locator('[id="sunday"]')).toBeChecked()
     await page.locator('[id="sunday"]').uncheck()
     const checkBoxStatus = await page.locator('[id="sunday"]').isChecked()
-
     expect(checkBoxStatus).toBe(false)
 
 })
